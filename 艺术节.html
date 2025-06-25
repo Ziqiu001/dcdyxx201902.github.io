@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>时光相册——艺术节</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="./css/ziqiu.css">
+  <link rel="stylesheet" href="./css/font.css">
+  <link rel="shortcut icon" href="images/ZiQiu.jpg" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+      <h1 class="biao">2019届2班——时光相册</h1>
+      </header>
+      <main>
+        <div class="slideshow-container">
+          <div class="slide">
+            <img src="艺术节/1.jpg" alt="大食会">
+          </div>
+          <div class="slide">
+            <img src="艺术节/2.jpg" alt="大食会">
+          </div>
+          <div class="slide">
+            <img src="艺术节/3.jpg" alt="大食会">
+          </div>
+          <div class="slide">
+            <img src="艺术节/4.jpg" alt="大食会">
+          </div>
+          <div class="slide">
+            <img src="艺术节/5.jpg" alt="大食会">
+          </div>
+          <div class="slide">
+            <img src="艺术节/6.jpg" alt="大食会">
+          </div>
+          <div class="slide">
+            <img src="艺术节/7.jpg" alt="大食会">
+          </div>
+          <div class="slide">
+            <img src="艺术节/8.jpg" alt="大食会">
+          </div>
+          <div class="slide">
+            <img src="艺术节/9.jpg" alt="大食会">
+          </div>
+          <div class="slide">
+            <img src="艺术节/10.jpg" alt="大食会">
+          </div>
+          <div class="slide">
+            <img src="艺术节/11.jpg" alt="大食会">
+          </div>
+          <div class="slide">
+            <img src="艺术节/12.jpg" alt="大食会">
+          </div>
+          <div class="slide">
+            <img src="艺术节/13.jpg" alt="大食会">
+          </div>
+          <div class="slide">
+            <img src="艺术节/14.jpg" alt="大食会">
+          </div>
+          <div class="slide">
+            <img src="艺术节/15.jpg" alt="大食会">
+          </div>
+          <div class="slide">
+            <img src="艺术节/16.jpg" alt="大食会">
+          </div>
+          <div class="slide">
+            <img src="艺术节/17.jpg" alt="大食会">
+          </div>
+          <div class="slide">
+            <img src="艺术节/18.jpg" alt="大食会">
+          </div>
+          <div class="slide">
+            <img src="艺术节/19.jpg" alt="大食会">
+          </div>
+          <div class="slide">
+            <img src="艺术节/20.jpg" alt="大食会">
+          </div>
+          <div class="slide">
+            <img src="艺术节/21.jpg" alt="大食会">
+          </div>
+          <div class="slide">
+            <img src="艺术节/22.jpg" alt="大食会">
+          </div>
+
+
+          
+      </main>
+    
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function(event) {
+  const slides = document.querySelectorAll('.slide');
+  let currentSlide = 0;
+
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      if (i === index) {
+        slide.classList.add('active');
+      } else {
+        slide.classList.remove('active');
+      }
+    });
+  }
+
+  function nextSlide() {
+    currentSlide++;
+    if (currentSlide >= slides.length) {
+      currentSlide = 0;
+    }
+    showSlide(currentSlide);
+  }
+
+  setInterval(nextSlide, 2000); // 每 2 秒切换一张幻灯片
+
+  showSlide(currentSlide); // 显示第一张幻灯片
+});
+    </script>
+    <style>
+
+    </style>
+  
+</body>
+
+</html>

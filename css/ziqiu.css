@@ -1,0 +1,86 @@
+/* 重置默认样式 */
+body, h1, p, ul, li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #000000;
+  }
+  
+  header {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .biao{
+    font-size: 24px;
+    color: #fff;
+  }
+
+  
+  main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .slideshow-container {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+  }
+  
+  .slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease;
+  }
+  
+  .slide.active {
+    opacity: 1;
+  }
+  
+  .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .wenzhang {
+    background-color: white;
+    border-color: black;
+    border-radius: 25px;
+    
+    border-left: 70%;
+    margin-top: 20px;
+  
+    .huan {
+      text-align: center;
+      font-family: 宋体;
+      font-size: 20px;
+    }
+  
+    .jie {
+      font-size: 14px;
+      font-family: 楷体;
+    }
+  
+    .qianbei {
+      .qian {
+        font-family: 宋体;
+        text-align: right;
+      }
+    }
+  }
+  
